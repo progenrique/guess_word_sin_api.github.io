@@ -49,10 +49,6 @@ async function getData() {
   }
 }
 
-function quitarAcentos(palabra) {
-  return palabra.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-}
-
 async function gueessWord() {
   try {
     const { word, randomWord } = await getData();
